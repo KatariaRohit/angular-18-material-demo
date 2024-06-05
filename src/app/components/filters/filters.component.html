@@ -1,0 +1,147 @@
+<div class="container">
+  <div>
+    <p class="title">Price Range</p>
+    <div class="price-range">
+      <div>${{ startValue.toLocaleString() }}</div>
+      <div>${{ endValue.toLocaleString() }}</div>
+    </div>
+    <mat-slider
+      min="10000"
+      max="10000000"
+      class="full-width slider"
+      [step]="step"
+    >
+      <input value="startValue" [(ngModel)]="startValue" matSliderStartThumb />
+      <input value="endValue" [(ngModel)]="endValue" matSliderEndThumb />
+    </mat-slider>
+  </div>
+  <mat-divider class="divider"></mat-divider>
+  <div>
+    <p>Brands + Models</p>
+    <mat-form-field class="example-full-width">
+      <mat-label>Search</mat-label>
+      <input
+        type="text"
+        placeholder="Brand or Model"
+        aria-label="Search"
+        matInput
+      />
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+
+    <mat-accordion class="example-headers-align" multi>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-checkbox
+              class="example-margin"
+              (click)="$event.stopPropagation()"
+              >Toyota</mat-checkbox
+            >
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="car-checkbox">
+          <mat-checkbox class="example-margin">Avalon</mat-checkbox>
+          <mat-checkbox class="example-margin">Belta</mat-checkbox>
+          <mat-checkbox class="example-margin">bZ3</mat-checkbox>
+          <mat-checkbox class="example-margin">Camry</mat-checkbox>
+          <mat-checkbox class="example-margin">Century</mat-checkbox>
+        </div>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-checkbox
+              class="example-margin"
+              (click)="$event.stopPropagation()"
+              >Toyota</mat-checkbox
+            >
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="car-checkbox">
+          <mat-checkbox class="example-margin">Avalon</mat-checkbox>
+          <mat-checkbox class="example-margin">Belta</mat-checkbox>
+          <mat-checkbox class="example-margin">bZ3</mat-checkbox>
+          <mat-checkbox class="example-margin">Camry</mat-checkbox>
+          <mat-checkbox class="example-margin">Century</mat-checkbox>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+  <mat-divider class="divider"></mat-divider>
+  <div>
+    <p class="title">Year</p>
+    <div class="price-range">
+      <div>{{ yearStartValue }}</div>
+      <div>{{ yearEndValue }}</div>
+    </div>
+    <mat-slider
+      min="2000"
+      [max]="currentYear"
+      class="full-width slider"
+      [step]="yearStep"
+    >
+      <input
+        value="yearStartValue"
+        [(ngModel)]="yearStartValue"
+        matSliderStartThumb
+      />
+      <input
+        value="yearEndValue"
+        [(ngModel)]="yearEndValue"
+        matSliderEndThumb
+      />
+    </mat-slider>
+  </div>
+  <mat-divider class="divider"></mat-divider>
+  <div>
+    <p class="title">Mileage (km)</p>
+    <div class="price-range">
+      <div>{{ mileageStartValue.toLocaleString() }} Kms</div>
+      <div>{{ mileageEndValue.toLocaleString() }} Kms</div>
+    </div>
+    <mat-slider
+      min="2000"
+      [max]="100000"
+      class="full-width slider"
+      [step]="mileageStep"
+    >
+      <input
+        value="mileageStartValue"
+        [(ngModel)]="mileageStartValue"
+        matSliderStartThumb
+      />
+      <input
+        value="mileageEndValue"
+        [(ngModel)]="mileageEndValue"
+        matSliderEndThumb
+      />
+    </mat-slider>
+  </div>
+  <mat-divider class="divider"></mat-divider>
+  <div>
+    <p class="title">Engine Type</p>
+    <mat-checkbox class="example-margin">Diesel</mat-checkbox>
+    <mat-checkbox class="example-margin">Electric</mat-checkbox>
+    <mat-checkbox class="example-margin">Hybrid</mat-checkbox>
+    <mat-checkbox class="example-margin">Petrol</mat-checkbox>
+  </div>
+  <mat-divider class="divider"></mat-divider>
+  <div>
+    <p class="title">Displacement (c.c.)</p>
+    <mat-checkbox class="example-margin">Below 1,500</mat-checkbox>
+    <mat-checkbox class="example-margin">1,500-2,500</mat-checkbox>
+    <mat-checkbox class="example-margin">2,501-3,500</mat-checkbox>
+    <mat-checkbox class="example-margin">3,501-4,500</mat-checkbox>
+    <mat-checkbox class="example-margin">Above 4,500</mat-checkbox>
+  </div>
+  <mat-divider class="divider"></mat-divider>
+  <div>
+    <p class="title">Max. Horsepower (PS)</p>
+    <mat-checkbox class="example-margin">Below 150</mat-checkbox>
+    <mat-checkbox class="example-margin">150-250</mat-checkbox>
+    <mat-checkbox class="example-margin">251-350</mat-checkbox>
+    <mat-checkbox class="example-margin">351-450</mat-checkbox>
+    <mat-checkbox class="example-margin">Above 451</mat-checkbox>
+  </div>
+</div>

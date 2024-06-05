@@ -38,3 +38,12 @@ $shopping-website-demo-theme: mat.define-theme((
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsla(0, 0%, 67%, .2);
+  border-radius: 0;
+}

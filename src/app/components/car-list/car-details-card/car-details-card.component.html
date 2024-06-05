@@ -1,0 +1,21 @@
+<mat-card class="example-card">
+  <img
+    mat-card-image
+    [src]="data.thumbnail_url"
+    class="car-image"
+    alt="Photo of a car"
+  />
+  <mat-card-content>
+    <p class="car-name">{{ data.brand }} {{ data.model }}</p>
+    <p class="details">
+      {{ data.manufacture_year }} &nbsp;&#x2022;&nbsp;
+      {{ data.format_mileage }} km &nbsp;&#x2022;&nbsp;
+      {{ data.format_displacement }} c.c.
+    </p>
+    <h2 class="car-price">${{ data.format_price }}</h2>
+  </mat-card-content>
+  <!-- <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions> -->
+</mat-card>

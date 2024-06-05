@@ -1,0 +1,65 @@
+.container {
+  padding: 10px 20px;
+  border: 1px solid rgba(36, 39, 44, 0.1);
+  border-radius: 12px;
+  max-height: 96vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.price-range {
+  display: flex;
+  justify-content: space-between;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.slider {
+  margin-left: 0;
+}
+
+.example-full-width {
+  width: 100%;
+  ::ng-deep
+    .mdc-text-field--filled:not(.mdc-text-field--disabled)
+    .mdc-line-ripple::before {
+    border-bottom: none;
+  }
+
+  ::ng-deep .mdc-line-ripple--active {
+    display: none;
+  }
+
+  ::ng-deep .mdc-text-field--filled {
+    border-radius: 4px !important;
+  }
+}
+.divider {
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top-color: rgba(36, 39, 44, 0.1) !important;
+}
+
+.car-checkbox {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: hsla(0, 0%, 67%, 0.2);
+  border-radius: 5px;
+}

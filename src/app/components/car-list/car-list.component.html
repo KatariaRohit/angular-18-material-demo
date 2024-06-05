@@ -1,0 +1,14 @@
+<div>
+  <div class="container">
+    <div class="filter">
+      <app-filters class="sticky"></app-filters>
+    </div>
+    <div class="list-container">
+      @for (car of cars; track car.id) {
+      <div class="car-card">
+        <app-car-details-card [data]="car"></app-car-details-card>
+      </div>
+      }
+    </div>
+  </div>
+</div>

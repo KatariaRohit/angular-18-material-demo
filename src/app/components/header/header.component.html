@@ -1,47 +1,53 @@
 <div class="header">
   <div class="first-row">
-    <div class="title">
-      <div class="search-bar">
-        <mat-form-field class="example-full-width">
-          <input
-            type="text"
-            placeholder="Pick one"
-            aria-label="Search for products"
-            matInput
-            [matAutocomplete]="auto"
-          />
-          <mat-autocomplete #auto="matAutocomplete">
-            @for (option of options; track option) {
-            <mat-option [value]="option">{{ option }}</mat-option>
-            }
-          </mat-autocomplete>
-          <mat-icon matSuffix>search</mat-icon>
-        </mat-form-field>
-      </div>
-    </div>
     <div class="logo">
-      <img src="../../../assets/logo/logo.png" width="50px" height="50px" />
+      <!-- <img src="../../../assets/logo/logo.png" width="50px" height="50px" /> -->
+      <!-- <img
+        src="../../../assets/logo/DistinguishedGentleman.png"
+        width="50px"
+        height="50px"
+      /> -->
+    </div>
+    <div class="search-bar">
+      <mat-form-field class="example-full-width">
+        <input
+          type="text"
+          placeholder="Search for cars"
+          aria-label="Search for cars"
+          matInput
+          [matAutocomplete]="auto"
+        />
+        <mat-autocomplete #auto="matAutocomplete">
+          @for (option of options; track option) {
+          <mat-option [value]="option">{{ option }}</mat-option>
+          }
+        </mat-autocomplete>
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
     </div>
     <div class="icons">
       <mat-icon class="icon material-symbols-outlined">person</mat-icon>
-      <mat-icon
+      <!-- <mat-icon
         class="icon material-symbols-outlined"
         matBadge="0"
         matBadgeColor="warn"
         >favorite</mat-icon
       >
-      <mat-icon class="icon material-symbols-outlined" matBadge="0" matBadgeColor="warn"
+      <mat-icon
+        class="icon material-symbols-outlined"
+        matBadge="0"
+        matBadgeColor="warn"
         >shopping_cart</mat-icon
-      >
+      > -->
     </div>
   </div>
   <div class="menu">
     <div class="menu-items">
-      <span class="item">Shop</span>
-      <span class="item">Products</span>
-      <span class="item">Sale</span>
-      <span class="item">Item 1</span>
-      <span class="item">Item 2</span>
+      <span class="item">Home</span>
+      <span class="item">New Cars</span>
+      <span class="item">Buy & Sell Cars</span>
+      <span class="item">News, Reviews & Videos</span>
+      <span class="item">Car Services</span>
     </div>
   </div>
 </div>
