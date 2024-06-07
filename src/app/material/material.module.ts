@@ -10,6 +10,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatDivider } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [],
@@ -26,6 +27,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatDivider,
     MatExpansionModule,
     MatCheckboxModule,
+    MatProgressSpinnerModule,
   ],
   exports: [
     MatAutocompleteModule,
@@ -40,6 +42,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatDivider,
     MatExpansionModule,
     MatCheckboxModule,
+    MatProgressSpinnerModule,
   ],
 })
 export class MaterialModule {}

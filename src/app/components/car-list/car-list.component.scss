@@ -1,26 +1,36 @@
-.container{
+.container {
     display: flex;
     gap: 30px;
     padding: 30px 100px;
 }
 
-.filter{
+.loader {
+    height: 74vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.filter {
     position: sticky;
     flex: 1;
-    .sticky{
+
+    .sticky {
         position: sticky;
         top: 10px;
     }
 }
 
-.list-container{
+.list-container {
     display: flex;
     flex: 4;
     gap: 30px;
     align-items: baseline;
     flex-wrap: wrap;
 
-    .car-card{
+    .car-card {
         flex: 1;
     }
 }
